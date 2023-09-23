@@ -1,7 +1,6 @@
 class MapquestService
   def get_mapquest_data(location)
-    api_key = Rails.application.credentials.dig(:MAPQUEST_API_KEY)
-    get_url("/geocoding/v1/address?location=#{location}&key=#{api_key}")
+    get_url("/geocoding/v1/address?location=#{location}")
   end
 
   def get_url(url)
@@ -10,6 +9,8 @@ class MapquestService
   end
 
   def conn
-    Faraday.new(url: 'http://www.mapquestapi.com/')
+    Faraday.new(url: 'http://www.mapquestapi.com/') do |faraday|
+      faraday.params["key"] = Rails.application.credentials.dig(:MAPQUEST_API_KEY)
+    end
   end
 end

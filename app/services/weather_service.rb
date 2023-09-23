@@ -1,7 +1,6 @@
 class WeatherService
   def get_weather_data(lat, lon)
-    api_key = Rails.application.credentials.dig(:WEATHER_API_KEY)
-    get_url("/v1/forecast.json?key=#{api_key}&q=#{lat},#{lon}&aqi=no")
+    get_url("/v1/forecast.json?q=#{lat},#{lon}")
   end
 
   def get_url(url)
@@ -10,6 +9,8 @@ class WeatherService
   end
 
   def conn
-    Faraday.new(url: "http://api.weatherapi.com")
+    Faraday.new(url: "http://api.weatherapi.com") do |faraday|
+      faraday.params["key"] = Rails.application.credentials.dig(:WEATHER_API_KEY)
+    end
   end
 end
