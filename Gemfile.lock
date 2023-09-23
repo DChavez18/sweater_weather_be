@@ -280,7 +280,7 @@ DEPENDENCIES
   rails (~> 7.0.8)
   rspec-rails
   selenium-webdriver
-  shoulda-matchers
+  shoulda-matchers (~> 5.0)
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
