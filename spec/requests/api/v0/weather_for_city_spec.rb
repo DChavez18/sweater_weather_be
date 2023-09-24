@@ -61,6 +61,22 @@ RSpec.describe "Forecast API", type: :request do
         expect(day[:sunrise]).to be_a(String)
         expect(day).to have_key(:sunset)
         expect(day[:sunset]).to be_a(String)
+        expect(day).to_not have_key(:maxwind_mph)
+        expect(day).to_not have_key(:avewind_mph)
+      end
+
+      forecast[:data][:attributes][:hourly_weather].each do |day|
+        expect(day).to be_a(Hash)
+        expect(day).to have_key(:time)
+        expect(day[:time]).to be_a(String)
+        expect(day).to have_key(:temp_f)
+        expect(day[:temp_f]).to be_a(Float)
+        expect(day).to have_key(:conditions)
+        expect(day[:conditions]).to be_a(String)
+        expect(day).to have_key(:icon)
+        expect(day[:icon]).to be_a(String)
+        expect(day).to_not have_key(:wind_mph)
+        expect(day).to_not have_key(:pressure_in)
       end
     end
   end
