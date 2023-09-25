@@ -1,5 +1,5 @@
 class BooksFacade
-  def get_books(location, limit)
+  def get_books(location, quantity)
     json = MapquestService.new.get_mapquest_data(location)
     data = json[:results][0][:locations][0][:latLng]
     city_coords = Mapquest.new(data)
@@ -13,7 +13,7 @@ class BooksFacade
       temperature: "#{weather_data[:current][:temp_f]} F"
      }
 
-    books = BooksService.new.get_books(location, limit)
+    books = BooksService.new.get_books(location, quantity)
     
     total_books_found = books[:numFound]
 

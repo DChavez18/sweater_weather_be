@@ -5,9 +5,9 @@ RSpec.describe "Books Facade" do
     it "returns book data and forecast for a city" do
       books_facade = BooksFacade.new
       location = "denver,co"
-      limit = 5
+      quantity = 5
 
-      books_data = books_facade.get_books(location, limit)
+      books_data = books_facade.get_books(location, quantity)
 
       expect(books_data).to be_a(Books)
 
@@ -22,7 +22,7 @@ RSpec.describe "Books Facade" do
 
       books_info = books_data.books
       expect(books_info).to be_an(Array)
-      expect(books_info.size).to eq(limit)
+      expect(books_info.size).to eq(quantity)
 
       if books_info.any?
         book = books_info.first
