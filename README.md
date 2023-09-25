@@ -27,4 +27,4 @@ To get started with **Sweater Weather BE** follow the instructions below:
 1. Fork and Clone the repo
 2. Using the terminal install the required dependencies:
 
-```bundle install
+```bundle install```
