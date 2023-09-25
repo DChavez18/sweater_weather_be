@@ -4,6 +4,7 @@ class BooksFacade
     data = json[:results][0][:locations][0][:latLng]
     city_coords = Mapquest.new(data)
     weather_data = WeatherService.new.get_weather_data(city_coords.lat, city_coords.lon)
+    destination = location
 
     forecast = {
       summary: weather_data[:current][:condition][:text],
@@ -12,16 +13,16 @@ class BooksFacade
 
     books_data = BooksService.new.get_books(location, quantity)
 
-    books_results = books[:numFound]
+    total_books_found = books_data[:numFound]
 
-    books_info = books[:docs].map do |book|
+    books = books_data[:docs].map do |book|
       {
         title: book[:title],
         publisher: book[:publisher],
         isbn: book[:isbn]
       }
 
-    Books.new(books_info, forecast, books_results, location)
+    Books.new(books, forecast, books_results, location)
     end
   end 
 end
