@@ -5,13 +5,13 @@ class Books
               :books,
               :id,
               :type
-  
-  def initialize(books_info, forecast, books_results, location)
-    @id = "null"
-    @type = "books"
+              
+  def initialize(location, forecast, total_books_found, books)
+    @id ='null'
+    @type = 'books'
     @destination = location
     @forecast = forecast
-    @total_books_found = books_info[:numFound]
-    @books = books_results
+    @total_books_found = total_books_found
+    @books = books
   end
 end

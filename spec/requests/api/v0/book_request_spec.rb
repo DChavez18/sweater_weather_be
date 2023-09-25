@@ -11,8 +11,6 @@ RSpec.describe "Book API" do
 
       book_data = JSON.parse(response.body, symbolize_names: true)
 
-      puts book_data
-      
       expect(book_data).to be_a(Hash)
       expect(book_data).to have_key(:data)
       expect(book_data[:data]).to be_a(Hash)
@@ -30,7 +28,31 @@ RSpec.describe "Book API" do
       expect(book_data[:data][:attributes][:forecast][:summary]).to be_a(String)
       expect(book_data[:data][:attributes][:forecast]).to have_key(:temperature)
       expect(book_data[:data][:attributes][:forecast][:temperature]).to be_a(String)
-      expect(book_data[:data][:attributes][:forecast]).to have_key(:high)
+      expect(book_data[:data][:attributes][:forecast]).to_not have_key(:high)
+      expect(book_data[:data][:attributes][:forecast]).to_not have_key(:low)
+      expect(book_data[:data][:attributes]).to have_key(:books)
+      expect(book_data[:data][:attributes][:books]).to be_an(Array)
+      expect(book_data[:data][:attributes][:books].count).to eq(5)
+      expect(book_data[:data][:attributes][:books][0]).to have_key(:isbn)
+      expect(book_data[:data][:attributes][:books][0][:isbn]).to be_an(Array)
+      expect(book_data[:data][:attributes][:books][0][:isbn].count).to eq(2)
+      expect(book_data[:data][:attributes][:books][0]).to have_key(:title)
+      expect(book_data[:data][:attributes][:books][0][:title]).to be_a(String)
+      expect(book_data[:data][:attributes][:books][0]).to have_key(:publisher)
+      expect(book_data[:data][:attributes][:books][0][:publisher]).to be_an(Array)
+      expect(book_data[:data][:attributes][:books][0][:publisher].count).to eq(1)
+
+      book_data[:data][:attributes][:books].each do |book|
+        expect(book).to be_a(Hash)
+        expect(book).to have_key(:isbn)
+        expect(book[:isbn]).to be_an(Array)
+        expect(book[:isbn].count).to eq(2)
+        expect(book).to have_key(:title)
+        expect(book[:title]).to be_a(String)
+        expect(book).to have_key(:publisher)
+        expect(book[:publisher]).to be_an(Array)
+        expect(book[:publisher].count).to eq(1)
+      end
     end
   end
 end
