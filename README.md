@@ -27,4 +27,37 @@ To get started with **Sweater Weather BE** follow the instructions below:
 1. Fork and Clone the repo
 2. Using the terminal install the required dependencies:
 
-```bundle install```
+  ```bundle install```
+
+3. Set up your database:
+
+  ```rails db:{drop,create,migrate}```
+
+4. Configure API Keys:
+  - Go to [Mapquest_API](https://developer.mapquest.com/documentation/geocoding-api/) to sign up for your api key.
+  - Go to [Weather_API](https://www.weatherapi.com/) to sign up for your api key.
+
+5. Encrypt Credentials using Rails Credentials
+
+run ```EDITOR=CODE rails credentials:edit ```
+
+This will create two files credentials.yml.enc & master.key and open up decrypted credentials.yml.enc
+
+6. Add your API keys into the file that VS Code will ask you to open.
+
+      WEATHER_API_KEY: <your_weather_api_key_here>
+
+      MAPQUEST_API_KEY: <your_mapquest_api_key_here>
+
+### Test
+
+Run ```bundle exec rspec```
+
+Test should be passing!
+
+### Use
+
+After installation is complete, the endpoints can be used for the front-end application in order to view specified data.
+
+
+  
