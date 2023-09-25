@@ -59,5 +59,41 @@ Test should be passing!
 
 After installation is complete, the endpoints can be used for the front-end application in order to view specified data.
 
+### **Information sent:**
+
+- **Weather info:**
+  - a data attribute, under which all other attributes are present:
+  - id, always set to null
+  - type, always set to forecast
+    - attributes, an object containing weather information
+      - current_weather, holds current weather data:
+        - last_updated, in a human-readable format such as “2023-04-07 16:30”
+        - temperature, floating point number indicating the current temperature in Fahrenheit
+        - feels_like, floating point number indicating a temperature in Fahrenheit
+        - humidity, numeric (int or float)
+        - uvi, numeric (int or float)
+        - visibility, numeric (int or float)
+        - condition, the text description for the current weather condition
+        - icon, png string for current weather condition
+      - daily_weather, array of the next 5 days of daily weather data:
+        - date, in a human-readable format such as “2023-04-07”
+        - sunrise, in a human-readable format such as “07:13 AM”
+        - sunset, in a human-readable format such as “08:07 PM”
+        - max_temp, floating point number indicating the maximum expected temperature in Fahrenheit
+        - min_temp, floating point number indicating the minimum expected temperature in Fahrenheit
+        - condition, the text description for the weather condition
+        - icon, png string for weather condition
+      - hourly_weather, array of all 24 hour’s hour data for the current day:
+        - time, in a human-readable format such as “22:00”
+        - temperature, floating point number indicating the temperature in Fahrenheit for that hour
+        - conditions, the text description for the weather condition at that hour
+        - icon, string, png string for weather condition at that hour
+        
+### Learning Goals
+ - Expose an API that aggregates data from multiple external APIs
+ - Expose an API that requires an authentication token
+ - Expose an API for CRUD functionality
+ - Determine completion criteria based on the needs of other developers
+ - Test both API consumption and exposure, making use of at least one mocking tool (VCR, Webmock, etc).
 
   
