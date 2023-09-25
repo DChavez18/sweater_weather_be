@@ -58,4 +58,20 @@ RSpec.describe "Book API" do
       end
     end
   end
+
+  describe "sad path" do
+    it "returns an error if location is missing" do
+      get "/api/v0/book-search?quantity=5"
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(400)
+
+      error = JSON.parse(response.body, symbolize_names: true)
+
+      expect(error).to be_a(Hash)
+      expect(error).to have_key(:error)
+      expect(error[:error]).to be_a(String)
+      expect(error[:error]).to eq("Location can't be blank")
+    end
+  end
 end
