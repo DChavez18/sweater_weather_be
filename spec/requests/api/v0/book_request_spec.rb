@@ -73,5 +73,19 @@ RSpec.describe "Book API" do
       expect(error[:error]).to be_a(String)
       expect(error[:error]).to eq("Location can't be blank")
     end
+
+    it "returns an error if quantity is 0" do
+      get "/api/v0/book-search?location=denver,co&quantity=0"
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(400)
+
+      error = JSON.parse(response.body, symbolize_names: true)
+
+      expect(error).to be_a(Hash)
+      expect(error).to have_key(:error)
+      expect(error[:error]).to be_a(String)
+      expect(error[:error]).to eq("Please provide a quantity greater than 0")
+    end
   end
 end
