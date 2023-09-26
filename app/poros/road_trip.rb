@@ -3,7 +3,7 @@ class RoadTrip
               :type,
               :start_city, 
               :end_city, 
-              :travel_time, 
+              :formatted_travel_time, 
               :weather_at_eta
 
   def initialize(start_city, end_city, formatted_travel_time, weather_at_eta)

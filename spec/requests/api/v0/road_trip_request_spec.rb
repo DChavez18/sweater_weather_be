@@ -9,6 +9,12 @@ RSpec.describe "Road Trip" do
 
       expect(response).to be_successful
       expect(response.status).to eq(200)
+
+      road_trip = JSON.parse(response.body, symbolize_names: true)
+
+      require 'pry'; binding.pry
+
+      expect(road_trip).to be_a(Hash)
     end
   end
 end
