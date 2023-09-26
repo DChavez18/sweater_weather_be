@@ -53,7 +53,7 @@ This will create two files credentials.yml.enc & master.key and open up decrypte
 
 Run ```bundle exec rspec```
 
-Test should be passing!
+Tests should be passing!
 
 ### Use
 
