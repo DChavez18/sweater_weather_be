@@ -26,7 +26,6 @@ class RoadTripFacade
               conditions: hour[:condition][:text]
             }
             return RoadTrip.new(origin, destination, formatted_travel_time, weather_at_eta)
-
           end    
         end
       end 
