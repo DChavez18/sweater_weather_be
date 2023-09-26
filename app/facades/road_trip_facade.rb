@@ -35,7 +35,7 @@ class RoadTripFacade
 
   private
 
-  def validate_input(origin, destination)
+ def validate_input(origin, destination)
     unless origin.present? && destination.present?
       raise RoadTripErrors::ValidationError, "Please provide both origin and destination"
     end
