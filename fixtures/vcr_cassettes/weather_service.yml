@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://www.mapquestapi.com/geocoding/v1/address?key=dcLXyIU542iB8vaBz5eRCqp6ibcIf3vU&location=denver,co
+    uri: http://api.weatherapi.com/v1/forecast.json?key=40276fd474234ed8835170522232309&q=39.738453,-104.984853
     body:
       encoding: US-ASCII
       string: ''
@@ -19,56 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 26 Sep 2023 22:04:39 GMT
-      Content-Type:
-      - application/json; charset=utf-8
-      Content-Length:
-      - '797'
-      Connection:
-      - keep-alive
-      X-Ratelimit-Limit-2628000:
-      - '15000'
-      X-Ratelimit-Remaining-2628000:
-      - '13390'
-      Ratelimit-Limit:
-      - '15000'
-      Ratelimit-Remaining:
-      - '13390'
-      Ratelimit-Reset:
-      - '1922121'
-      X-Powered-By:
-      - MapQuest
-      X-Request-Id:
-      - b01a5e40-5cb8-11ee-a6bf-19b3c358d110
-      Access-Control-Allow-Origin:
-      - "*"
-      Etag:
-      - W/"31d-e6U4VUsIusqpoCnMOLAMG4TFeGE"
-    body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMyBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJkZW52ZXIsY28ifSwibG9jYXRpb25zIjpbeyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiRGVudmVyIiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiYWRtaW5BcmVhNCI6IkRlbnZlciIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6IkNPIiwiYWRtaW5BcmVhM1R5cGUiOiJTdGF0ZSIsImFkbWluQXJlYTEiOiJVUyIsImFkbWluQXJlYTFUeXBlIjoiQ291bnRyeSIsInBvc3RhbENvZGUiOiIiLCJnZW9jb2RlUXVhbGl0eUNvZGUiOiJBNVhBWCIsImdlb2NvZGVRdWFsaXR5IjoiQ0lUWSIsImRyYWdQb2ludCI6ZmFsc2UsInNpZGVPZlN0cmVldCI6Ik4iLCJsaW5rSWQiOiIwIiwidW5rbm93bklucHV0IjoiIiwidHlwZSI6InMiLCJsYXRMbmciOnsibGF0IjozOS43NDAwMSwibG5nIjotMTA0Ljk5MjAyfSwiZGlzcGxheUxhdExuZyI6eyJsYXQiOjM5Ljc0MDAxLCJsbmciOi0xMDQuOTkyMDJ9LCJtYXBVcmwiOiIifV19XX0=
-  recorded_at: Tue, 26 Sep 2023 22:04:39 GMT
-- request:
-    method: get
-    uri: http://api.weatherapi.com/v1/forecast.json?key=40276fd474234ed8835170522232309&q=39.74001,-104.99202
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      User-Agent:
-      - Faraday v2.7.11
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Date:
-      - Tue, 26 Sep 2023 22:04:39 GMT
+      - Tue, 26 Sep 2023 22:04:53 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -78,7 +29,7 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Server:
-      - BunnyCDN-IL1-1070
+      - BunnyCDN-IL1-940
       Cdn-Pullzone:
       - '93447'
       Cdn-Uid:
@@ -92,7 +43,7 @@ http_interactions:
       Via:
       - 1.1 varnish (Varnish/6.0)
       X-Varnish:
-      - '453444966'
+      - '409899008'
       Cdn-Proxyver:
       - '1.04'
       Cdn-Requestpullsuccess:
@@ -102,17 +53,17 @@ http_interactions:
       Cdn-Cachedat:
       - '09/26/2023 22:03:58'
       Cdn-Edgestorageid:
-      - '940'
+      - '845'
       Cdn-Status:
       - '200'
       Cdn-Requestid:
-      - 0c1ca5bdeb59cdbd273c5c20b4c8227a
+      - 0c7def06ab7e1e14caa9375f15cf5644
       Cdn-Cache:
       - HIT
     body:
       encoding: ASCII-8BIT
       string: '{"location":{"name":"Denver","region":"Colorado","country":"United
-        States of America","lat":39.74,"lon":-104.99,"tz_id":"America/Denver","localtime_epoch":1695765836,"localtime":"2023-09-26
+        States of America","lat":39.74,"lon":-104.98,"tz_id":"America/Denver","localtime_epoch":1695765837,"localtime":"2023-09-26
         16:03"},"current":{"last_updated_epoch":1695765600,"last_updated":"2023-09-26
         16:00","temp_c":27.8,"temp_f":82.0,"is_day":1,"condition":{"text":"Partly
         cloudy","icon":"//cdn.weatherapi.com/weather/64x64/day/116.png","code":1003},"wind_mph":11.9,"wind_kph":19.1,"wind_degree":60,"wind_dir":"ENE","pressure_mb":1022.0,"pressure_in":30.17,"precip_mm":0.0,"precip_in":0.0,"humidity":13,"cloud":25,"feelslike_c":25.9,"feelslike_f":78.5,"vis_km":16.0,"vis_miles":9.0,"uv":7.0,"gust_mph":6.4,"gust_kph":10.4},"forecast":{"forecastday":[{"date":"2023-09-26","date_epoch":1695686400,"day":{"maxtemp_c":30.1,"maxtemp_f":86.2,"mintemp_c":11.4,"mintemp_f":52.5,"avgtemp_c":21.9,"avgtemp_f":71.4,"maxwind_mph":7.6,"maxwind_kph":12.2,"totalprecip_mm":0.0,"totalprecip_in":0.0,"totalsnow_cm":0.0,"avgvis_km":10.0,"avgvis_miles":6.0,"avghumidity":25.0,"daily_will_it_rain":0,"daily_chance_of_rain":0,"daily_will_it_snow":0,"daily_chance_of_snow":0,"condition":{"text":"Sunny","icon":"//cdn.weatherapi.com/weather/64x64/day/113.png","code":1000},"uv":6.0},"astro":{"sunrise":"06:51
@@ -143,5 +94,5 @@ http_interactions:
         21:00","temp_c":22.8,"temp_f":73.0,"is_day":0,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png","code":1000},"wind_mph":3.6,"wind_kph":5.8,"wind_degree":177,"wind_dir":"S","pressure_mb":1014.0,"pressure_in":29.95,"precip_mm":0.0,"precip_in":0.0,"humidity":24,"cloud":5,"feelslike_c":23.0,"feelslike_f":73.4,"windchill_c":22.8,"windchill_f":73.0,"heatindex_c":23.0,"heatindex_f":73.4,"dewpoint_c":1.5,"dewpoint_f":34.7,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":6.8,"gust_kph":10.9,"uv":1.0},{"time_epoch":1695787200,"time":"2023-09-26
         22:00","temp_c":22.5,"temp_f":72.5,"is_day":0,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png","code":1000},"wind_mph":4.5,"wind_kph":7.2,"wind_degree":218,"wind_dir":"SW","pressure_mb":1012.0,"pressure_in":29.87,"precip_mm":0.0,"precip_in":0.0,"humidity":24,"cloud":0,"feelslike_c":22.9,"feelslike_f":73.2,"windchill_c":22.5,"windchill_f":72.5,"heatindex_c":22.9,"heatindex_f":73.2,"dewpoint_c":1.3,"dewpoint_f":34.3,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":8.3,"gust_kph":13.3,"uv":1.0},{"time_epoch":1695790800,"time":"2023-09-26
         23:00","temp_c":21.5,"temp_f":70.8,"is_day":0,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png","code":1000},"wind_mph":3.6,"wind_kph":5.8,"wind_degree":238,"wind_dir":"WSW","pressure_mb":1012.0,"pressure_in":29.88,"precip_mm":0.0,"precip_in":0.0,"humidity":24,"cloud":0,"feelslike_c":21.5,"feelslike_f":70.8,"windchill_c":21.5,"windchill_f":70.8,"heatindex_c":22.5,"heatindex_f":72.4,"dewpoint_c":0.3,"dewpoint_f":32.5,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":6.8,"gust_kph":11.0,"uv":1.0}]}]}}'
-  recorded_at: Tue, 26 Sep 2023 22:04:39 GMT
+  recorded_at: Tue, 26 Sep 2023 22:04:53 GMT
 recorded_with: VCR 6.2.0

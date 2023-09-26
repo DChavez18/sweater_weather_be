@@ -101,14 +101,14 @@ RSpec.describe "Road Trip" do
     it "can return data for a LOOOONG road trip" do
       VCR.use_cassette('road_trip_long') do
         user = User.create!(email: "test@test.com", password: "test12", password_confirmation: "test12", api_key: "ghp1234512345ghy")
-
+        
         post "/api/v0/road_trip", params: {origin: "New York, NY", destination: "Panama City, Panama", api_key: user.api_key}, as: :json
-
+        
         expect(response).to be_successful
         expect(response.status).to eq(200)
-
+        
         road_trip = JSON.parse(response.body, symbolize_names: true)
-
+        
         expect(road_trip).to be_a(Hash)
         expect(road_trip).to have_key(:data)
         expect(road_trip[:data]).to be_a(Hash)

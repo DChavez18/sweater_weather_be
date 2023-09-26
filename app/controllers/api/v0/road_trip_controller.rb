@@ -13,8 +13,13 @@ class Api::V0::RoadTripController < ApplicationController
 
   private
 
+  def api_key_valid?(api_key)
+    api_key.present? && api_key.length >= 10
+  end
+
   def authenticate_user(api_key)
-    User.find_by(api_key: api_key)
+    user = User.find_by(api_key: api_key)
+    user if user.present?
   end
 
   def render_unauthorized
