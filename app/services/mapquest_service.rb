@@ -1,4 +1,8 @@
 class MapquestService
+  def get_directions_data(origin, destination)
+    get_url("/directions/v2/route?from=#{origin}&to=#{destination}")
+  end
+
   def get_mapquest_data(location)
     get_url("/geocoding/v1/address?location=#{location}")
   end
