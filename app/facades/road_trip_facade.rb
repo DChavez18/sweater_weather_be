@@ -14,9 +14,9 @@ class RoadTripFacade
       formatted_travel_time = travel_data[:route][:formattedTime]
       arrival_time = Time.now + travel_time
 
-      destination_weather[:forecast][:forecastday].map do |day|
-      next unless arrival_time.to_s.include?(day[:date])
-      
+      destination_weather[:forecast][:forecastday].each do |day|
+        next unless arrival_time.to_s.include?(day[:date])
+        
         day[:hour].each do |hour|
           hour_time = Time.parse(hour[:time])
           if arrival_time.between?(hour_time, hour_time + 1.hour)
@@ -28,13 +28,15 @@ class RoadTripFacade
             return RoadTrip.new(origin, destination, formatted_travel_time, weather_at_eta)
           end    
         end
-      end 
+      end
+
+      return RoadTrip.new(origin, destination, "unknown travel time", {})
     end
   end
 
   private
 
- def validate_input(origin, destination)
+  def validate_input(origin, destination)
     unless origin.present? && destination.present?
       raise RoadTripErrors::ValidationError, "Please provide both origin and destination"
     end

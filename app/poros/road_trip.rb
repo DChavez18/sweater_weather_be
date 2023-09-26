@@ -14,5 +14,4 @@ class RoadTrip
     @formatted_travel_time = formatted_travel_time
     @weather_at_eta = weather_at_eta
   end
-
 end
