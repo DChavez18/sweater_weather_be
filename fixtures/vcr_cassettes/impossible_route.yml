@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 26 Sep 2023 22:04:42 GMT
+      - Tue, 26 Sep 2023 22:52:22 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -29,17 +29,17 @@ http_interactions:
       X-Ratelimit-Limit-2628000:
       - '15000'
       X-Ratelimit-Remaining-2628000:
-      - '13386'
+      - '13358'
       Ratelimit-Limit:
       - '15000'
       Ratelimit-Remaining:
-      - '13386'
+      - '13358'
       Ratelimit-Reset:
-      - '1922118'
+      - '1919258'
       X-Powered-By:
       - MapQuest
       X-Request-Id:
-      - b1b808b0-5cb8-11ee-88fb-5d30dc24e6e2
+      - 5ac28330-5cbf-11ee-a6bf-19b3c358d110
       Access-Control-Allow-Origin:
       - "*"
       Etag:
@@ -48,7 +48,7 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJpbmZvIjp7InN0YXR1c2NvZGUiOjAsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMyBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbXX0sIm9wdGlvbnMiOnsibWF4UmVzdWx0cyI6LTEsImlnbm9yZUxhdExuZ0lucHV0IjpmYWxzZX0sInJlc3VsdHMiOlt7InByb3ZpZGVkTG9jYXRpb24iOnsibG9jYXRpb24iOiJMb25kb24sVUsifSwibG9jYXRpb25zIjpbeyJzdHJlZXQiOiIiLCJhZG1pbkFyZWE2IjoiIiwiYWRtaW5BcmVhNlR5cGUiOiJOZWlnaGJvcmhvb2QiLCJhZG1pbkFyZWE1IjoiTG9uZG9uIiwiYWRtaW5BcmVhNVR5cGUiOiJDaXR5IiwiYWRtaW5BcmVhNCI6IkxvbmRvbiIsImFkbWluQXJlYTRUeXBlIjoiQ291bnR5IiwiYWRtaW5BcmVhMyI6IkVORyIsImFkbWluQXJlYTNUeXBlIjoiU3RhdGUiLCJhZG1pbkFyZWExIjoiR0IiLCJhZG1pbkFyZWExVHlwZSI6IkNvdW50cnkiLCJwb3N0YWxDb2RlIjoiIiwiZ2VvY29kZVF1YWxpdHlDb2RlIjoiQTVYQVgiLCJnZW9jb2RlUXVhbGl0eSI6IkNJVFkiLCJkcmFnUG9pbnQiOmZhbHNlLCJzaWRlT2ZTdHJlZXQiOiJOIiwibGlua0lkIjoiMCIsInVua25vd25JbnB1dCI6IiIsInR5cGUiOiJzIiwibGF0TG5nIjp7ImxhdCI6NTEuNTA2NDMsImxuZyI6LTAuMTI3MTl9LCJkaXNwbGF5TGF0TG5nIjp7ImxhdCI6NTEuNTA2NDMsImxuZyI6LTAuMTI3MTl9LCJtYXBVcmwiOiIifV19XX0=
-  recorded_at: Tue, 26 Sep 2023 22:04:42 GMT
+  recorded_at: Tue, 26 Sep 2023 22:52:22 GMT
 - request:
     method: get
     uri: http://api.weatherapi.com/v1/forecast.json?key=40276fd474234ed8835170522232309&q=51.50643,-0.12719
@@ -68,7 +68,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 26 Sep 2023 22:04:42 GMT
+      - Tue, 26 Sep 2023 22:52:23 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -78,7 +78,7 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Server:
-      - BunnyCDN-IL1-1070
+      - BunnyCDN-IL1-941
       Cdn-Pullzone:
       - '93447'
       Cdn-Uid:
@@ -92,7 +92,7 @@ http_interactions:
       Via:
       - 1.1 haproxy-api-1 (Varnish/7.3)
       X-Varnish:
-      - '1692829309'
+      - '1705642074'
       Cdn-Proxyver:
       - '1.04'
       Cdn-Requestpullsuccess:
@@ -100,22 +100,22 @@ http_interactions:
       Cdn-Requestpullcode:
       - '200'
       Cdn-Cachedat:
-      - '09/26/2023 22:04:42'
+      - '09/26/2023 22:52:23'
       Cdn-Edgestorageid:
       - '940'
       Cdn-Status:
       - '200'
       Cdn-Requestid:
-      - 541181ad905ca5b25d3a535c4ecaf0ca
+      - aa073f29ea139080d7cfd8b2e053459b
       Cdn-Cache:
       - EXPIRED
     body:
       encoding: ASCII-8BIT
       string: '{"location":{"name":"London","region":"City of London, Greater London","country":"United
-        Kingdom","lat":51.51,"lon":-0.13,"tz_id":"Europe/London","localtime_epoch":1695765880,"localtime":"2023-09-26
-        23:04"},"current":{"last_updated_epoch":1695765600,"last_updated":"2023-09-26
-        23:00","temp_c":16.0,"temp_f":60.8,"is_day":0,"condition":{"text":"Partly
-        cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png","code":1003},"wind_mph":6.9,"wind_kph":11.2,"wind_degree":220,"wind_dir":"SW","pressure_mb":1018.0,"pressure_in":30.06,"precip_mm":0.0,"precip_in":0.0,"humidity":88,"cloud":50,"feelslike_c":16.0,"feelslike_f":60.8,"vis_km":10.0,"vis_miles":6.0,"uv":1.0,"gust_mph":5.8,"gust_kph":9.3},"forecast":{"forecastday":[{"date":"2023-09-26","date_epoch":1695686400,"day":{"maxtemp_c":21.7,"maxtemp_f":71.0,"mintemp_c":14.5,"mintemp_f":58.1,"avgtemp_c":17.3,"avgtemp_f":63.2,"maxwind_mph":12.3,"maxwind_kph":19.8,"totalprecip_mm":0.66,"totalprecip_in":0.03,"totalsnow_cm":0.0,"avgvis_km":9.8,"avgvis_miles":6.0,"avghumidity":75.0,"daily_will_it_rain":1,"daily_chance_of_rain":86,"daily_will_it_snow":0,"daily_chance_of_snow":0,"condition":{"text":"Patchy
+        Kingdom","lat":51.51,"lon":-0.13,"tz_id":"Europe/London","localtime_epoch":1695768740,"localtime":"2023-09-26
+        23:52"},"current":{"last_updated_epoch":1695768300,"last_updated":"2023-09-26
+        23:45","temp_c":15.0,"temp_f":59.0,"is_day":0,"condition":{"text":"Partly
+        cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png","code":1003},"wind_mph":4.3,"wind_kph":6.8,"wind_degree":230,"wind_dir":"SW","pressure_mb":1018.0,"pressure_in":30.06,"precip_mm":0.0,"precip_in":0.0,"humidity":94,"cloud":50,"feelslike_c":15.1,"feelslike_f":59.2,"vis_km":10.0,"vis_miles":6.0,"uv":1.0,"gust_mph":5.8,"gust_kph":9.3},"forecast":{"forecastday":[{"date":"2023-09-26","date_epoch":1695686400,"day":{"maxtemp_c":21.7,"maxtemp_f":71.0,"mintemp_c":14.5,"mintemp_f":58.1,"avgtemp_c":17.3,"avgtemp_f":63.2,"maxwind_mph":12.3,"maxwind_kph":19.8,"totalprecip_mm":0.66,"totalprecip_in":0.03,"totalsnow_cm":0.0,"avgvis_km":9.8,"avgvis_miles":6.0,"avghumidity":75.0,"daily_will_it_rain":1,"daily_chance_of_rain":86,"daily_will_it_snow":0,"daily_chance_of_snow":0,"condition":{"text":"Patchy
         rain possible","icon":"//cdn.weatherapi.com/weather/64x64/day/176.png","code":1063},"uv":4.0},"astro":{"sunrise":"06:52
         AM","sunset":"06:50 PM","moonrise":"06:10 PM","moonset":"02:05 AM","moon_phase":"Waxing
         Gibbous","moon_illumination":"84","is_moon_up":1,"is_sun_up":0},"hour":[{"time_epoch":1695682800,"time":"2023-09-26
@@ -158,9 +158,9 @@ http_interactions:
         21:00","temp_c":16.3,"temp_f":61.3,"is_day":0,"condition":{"text":"Partly
         cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png","code":1003},"wind_mph":6.9,"wind_kph":11.2,"wind_degree":239,"wind_dir":"WSW","pressure_mb":1017.0,"pressure_in":30.03,"precip_mm":0.0,"precip_in":0.0,"humidity":83,"cloud":42,"feelslike_c":16.3,"feelslike_f":61.3,"windchill_c":16.3,"windchill_f":61.3,"heatindex_c":16.3,"heatindex_f":61.3,"dewpoint_c":13.5,"dewpoint_f":56.2,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":9.8,"gust_kph":15.8,"uv":1.0},{"time_epoch":1695762000,"time":"2023-09-26
         22:00","temp_c":15.8,"temp_f":60.4,"is_day":0,"condition":{"text":"Clear","icon":"//cdn.weatherapi.com/weather/64x64/night/113.png","code":1000},"wind_mph":4.9,"wind_kph":7.9,"wind_degree":236,"wind_dir":"WSW","pressure_mb":1017.0,"pressure_in":30.03,"precip_mm":0.0,"precip_in":0.0,"humidity":85,"cloud":20,"feelslike_c":15.8,"feelslike_f":60.4,"windchill_c":15.8,"windchill_f":60.4,"heatindex_c":15.8,"heatindex_f":60.4,"dewpoint_c":13.3,"dewpoint_f":55.9,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":7.0,"gust_kph":11.3,"uv":1.0},{"time_epoch":1695765600,"time":"2023-09-26
-        23:00","temp_c":16.0,"temp_f":60.8,"is_day":0,"condition":{"text":"Partly
-        cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png","code":1003},"wind_mph":6.9,"wind_kph":11.2,"wind_degree":220,"wind_dir":"SW","pressure_mb":1018.0,"pressure_in":30.06,"precip_mm":0.0,"precip_in":0.0,"humidity":88,"cloud":50,"feelslike_c":15.3,"feelslike_f":59.6,"windchill_c":15.3,"windchill_f":59.6,"heatindex_c":15.3,"heatindex_f":59.6,"dewpoint_c":13.1,"dewpoint_f":55.5,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":5.8,"gust_kph":9.3,"uv":1.0}]}]}}'
-  recorded_at: Tue, 26 Sep 2023 22:04:42 GMT
+        23:00","temp_c":15.0,"temp_f":59.0,"is_day":0,"condition":{"text":"Partly
+        cloudy","icon":"//cdn.weatherapi.com/weather/64x64/night/116.png","code":1003},"wind_mph":4.3,"wind_kph":6.8,"wind_degree":230,"wind_dir":"SW","pressure_mb":1018.0,"pressure_in":30.06,"precip_mm":0.0,"precip_in":0.0,"humidity":94,"cloud":50,"feelslike_c":15.3,"feelslike_f":59.6,"windchill_c":15.3,"windchill_f":59.6,"heatindex_c":15.3,"heatindex_f":59.6,"dewpoint_c":13.1,"dewpoint_f":55.5,"will_it_rain":0,"chance_of_rain":0,"will_it_snow":0,"chance_of_snow":0,"vis_km":10.0,"vis_miles":6.0,"gust_mph":5.8,"gust_kph":9.3,"uv":1.0}]}]}}'
+  recorded_at: Tue, 26 Sep 2023 22:52:23 GMT
 - request:
     method: get
     uri: http://www.mapquestapi.com/directions/v2/route?from=Denver,CO&key=dcLXyIU542iB8vaBz5eRCqp6ibcIf3vU&to=London,UK
@@ -180,7 +180,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 26 Sep 2023 22:04:43 GMT
+      - Tue, 26 Sep 2023 22:52:23 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -190,17 +190,17 @@ http_interactions:
       X-Ratelimit-Limit-2628000:
       - '15000'
       X-Ratelimit-Remaining-2628000:
-      - '13382'
+      - '13352'
       Ratelimit-Limit:
       - '15000'
       Ratelimit-Remaining:
-      - '13382'
+      - '13352'
       Ratelimit-Reset:
-      - '1922117'
+      - '1919257'
       X-Powered-By:
       - MapQuest
       X-Request-Id:
-      - b21cbdf0-5cb8-11ee-be4e-af8e498a33bd
+      - 5b1ed400-5cbf-11ee-be4e-af8e498a33bd
       Access-Control-Allow-Origin:
       - "*"
       X-Transaction-Count:
@@ -211,5 +211,5 @@ http_interactions:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJyb3V0ZSI6eyJyb3V0ZUVycm9yIjp7ImVycm9yQ29kZSI6MiwibWVzc2FnZSI6IiJ9fSwiaW5mbyI6eyJzdGF0dXNjb2RlIjo0MDIsImNvcHlyaWdodCI6eyJ0ZXh0IjoiwqkgMjAyMyBNYXBRdWVzdCwgSW5jLiIsImltYWdlVXJsIjoiaHR0cDovL2FwaS5tcWNkbi5jb20vcmVzL21xbG9nby5naWYiLCJpbWFnZUFsdFRleHQiOiLCqSAyMDIzIE1hcFF1ZXN0LCBJbmMuIn0sIm1lc3NhZ2VzIjpbIldlIGFyZSB1bmFibGUgdG8gcm91dGUgd2l0aCB0aGUgZ2l2ZW4gbG9jYXRpb25zLiJdfX0=
-  recorded_at: Tue, 26 Sep 2023 22:04:43 GMT
+  recorded_at: Tue, 26 Sep 2023 22:52:23 GMT
 recorded_with: VCR 6.2.0

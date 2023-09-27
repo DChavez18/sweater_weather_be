@@ -89,6 +89,18 @@ After installation is complete, the endpoints can be used for the front-end appl
         - conditions, the text description for the weather condition at that hour
         - icon, string, png string for weather condition at that hour
         
+- **Road Trip Info:**
+  - a data attribute, under which all other attributes are present:
+    - attributes, an object containing road trip information:
+      - start_city, string, such as “Cincinatti, OH”
+      - end_city, string, such as “Chicaco, IL”
+      - travel_time, string, something user-friendly like “2 hours, 13 minutes” or “2h13m” or “02:13:00” or something of that nature (you don’t have to include seconds); set this string to “impossible route” if there is no route between your cities
+      - weather_at_eta, conditions at end_city when you arrive (not CURRENT weather), object containing:
+        - datetime, date and time for the reported weather at the destination at the approximate hour of arrival
+        - temperature, numeric value in Fahrenheit
+        - condition, the text description for the weather condition at that hour
+        - note: this object will be blank if the travel time is impossible
+
 ### Learning Goals
  - Expose an API that aggregates data from multiple external APIs
  - Expose an API that requires an authentication token
